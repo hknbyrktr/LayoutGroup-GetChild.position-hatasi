@@ -5,7 +5,7 @@ public class Deneme : MonoBehaviour
     public Transform Parent;   // Horizontal/Vertical/Grid Layout Group component'i olan transformlar.
     public Transform Parent_2;
 
-    public Transform Obje;   // pozisyonu bulunmak istenen objelerimiz.
+    public Transform Obje;     // pozisyonu bulunmak istenen objelerimiz.
 
 
     void Start()
@@ -17,7 +17,7 @@ public class Deneme : MonoBehaviour
             print(Parent.GetChild(i).position);                      //------------------> Burada kullandığımız pozisyonlar ebeveynin pozisyonuyla aynı değeri verir.
         }
 
-        Canvas.ForceUpdateCanvases();                               //-------------------> Tüm tuvalleri içeriklerini güncellemeye zorla.
+        Canvas.ForceUpdateCanvases();                                //-------------------> Tüm tuvalleri içeriklerini güncellemeye zorla.
 
         for (int i = 0; i < 5; i++)
         {
